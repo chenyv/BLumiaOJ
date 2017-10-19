@@ -50,10 +50,14 @@
 			$password=pwGen($new_password);
 		else
 			$password=pwGen($password);
+		//$sql=$pdo->prepare("UPDATE `users` 
+		//	SET `password`=?, `nick`=?, `school`=?, `email`=? 
+		//	WHERE `user_id`=?");
+		//$sql->execute(array($password,$user_name,$user_school,$user_email,$user_id));
 		$sql=$pdo->prepare("UPDATE `users` 
-			SET `password`=?, `nick`=?, `school`=?, `email`=? 
+			SET `password`=?, `email`=? 
 			WHERE `user_id`=?");
-		$sql->execute(array($password,$user_name,$user_school,$user_email,$user_id));
+		$sql->execute(array($password,$user_email,$user_id));
 		//权限部分未添加
 		echo "success";
 		echo "<script language='javascript'>\n";

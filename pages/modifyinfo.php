@@ -29,7 +29,14 @@
 							<div class="control-group">
 								<label class="control-label"><?php echo L_NICK;?></label>
 								<div class="controls">
-									<input type="text" class="form-control" name="user_nick" value="<?php echo htmlspecialchars($user_name)?>" required />
+									<input type="text" class="form-control" name="user_nick" value="<?php echo htmlspecialchars($user_name)?>" required readonly />
+									<p class="help-block"></p>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label"><?php echo L_SCHOOL;?></label>
+								<div class="controls">
+									<input type="text" class="form-control" name="user_school" value="<?php echo htmlspecialchars($user_school)?>" readonly />
 									<p class="help-block"></p>
 								</div>
 							</div>
@@ -63,13 +70,6 @@
 									name="new_pwd_ii" 
 								/>
 								<p class="help-block"></p>
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label"><?php echo L_SCHOOL;?></label>
-								<div class="controls">
-									<input type="text" class="form-control" name="user_school" value="<?php echo htmlspecialchars($user_school)?>" />
-									<p class="help-block"></p>
 								</div>
 							</div>
 							<div class="control-group">

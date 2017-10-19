@@ -106,10 +106,10 @@
 	/************* Register ****************/
 	const L_PLZ			= "请";
 	const L_UID			= "用户ID";
-	const L_NICK		= "昵称";
+	const L_NICK		= "姓名";
 	const L_PSW			= "密码";
 	const L_PSW_AGAIN	= "再次输入密码";
-	const L_SCHOOL		= "学校";
+	const L_SCHOOL		= "学校专业班级";
 	const L_EMAIL		= "电子邮箱";
 	const L_AGREE_EULA	= "同意 最终用户许可协议";
 	const L_UID_DV_MSG	= "用户ID 长度应当超过 3 个字符.";
