@@ -23,6 +23,7 @@
 <?php } if (isset($_SESSION['administrator'])||isset( $_SESSION['op_UserManager'] )) { ?>
 	<div class="navmenu-group-header"><?php echo LA_USER_MGR;?></div>
 	<ul class="nav navmenu-nav">
+		<li><a href="./user_list.php">用户管理</a></li>
 		<li><a href="./reset_password.php"><?php echo LA_RESET_PSW;?></a></li>
 		<li><a href="./account_gen.php"><?php echo LA_ACCOUNT_GEN;?></a></li>
 	</ul>

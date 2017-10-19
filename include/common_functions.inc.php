@@ -61,4 +61,16 @@
 		header('Content-Type: application/json');
 		exit(json_encode(compact("status", "message", "result")));
 	}
+
+	//$delimiters has to be array
+	//$string has to be array
+	//$text = "here is a sample: this text, and this will be exploded. this also | this one too :)";
+	//$exploded = multiexplode(array(",",".","|",":"),$text);
+	function multiexplode ($delimiters,$string) {
+		
+		$ready = str_replace($delimiters, $delimiters[0], $string);
+		$launch = explode($delimiters[0], $ready);
+		return  $launch;
+	} 
+	
 ?>
