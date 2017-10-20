@@ -43,10 +43,11 @@
 	</div>
 	<?php if (isset($pid) && $contestAuthResult) { ?>
 	<p class="text-center">
-		<?php echo L_TIME_LIMIT;?>:<span class="label label-primary"><?php echo $problemItem['time_limit']." Sec";?></span>
-		<?php echo L_MEM_LIMIT;?>:<span class="label label-primary"><?php echo $problemItem['memory_limit']." MiB";?></span><br/>
-		<?php echo L_SUBMIT;?>:<span class="label label-info"><?php echo $problemItem['submit'];?></span>
-		<?php echo L_JUDGE_AC;?>:<span class="label label-success"><?php echo $problemItem['accepted'];?></span>
+		<?php echo L_TIME_LIMIT;?>: <span class="label label-primary"><?php echo $problemItem['time_limit']." Sec";?></span>
+		<?php echo L_MEM_LIMIT;?>: <span class="label label-primary"><?php echo $problemItem['memory_limit']." MiB";?></span>
+	</p><p class="text-center">
+		<?php echo L_SUBMIT;?>: <span class="label label-info"><?php echo $problemItem['submit'];?></span>
+		<?php echo L_JUDGE_AC;?>: <span class="label label-success"><?php echo $problemItem['accepted'];?></span>
 	</p>
 	<p class="text-center">
 		<a id="oj-p-submit" class="btn btn-primary" href="./problemsubmit.php?pid=<?php echo $pid."&cid=".$cid;?>" role="button"><?php echo L_SUBMIT;?></a>

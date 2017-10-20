@@ -41,7 +41,7 @@
 			</div>
 
 			<h3><a data-toggle="collapse" data-target="#problemHint"><?php echo L_HINT;?></a></h3>
-			<div class="collapse" id="problemHint" aria-expanded="true">
+			<div class="collapse in" id="problemHint" aria-expanded="true">
 				<pre><?php echo $problemItem['hint'];?></pre>
 			</div>
 			<!--

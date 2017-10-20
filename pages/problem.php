@@ -9,10 +9,11 @@
 		<div class="container">
 			<h1 class="text-center"><?php echo $problemItem['problem_id']." : ".$problemItem['title'];?></h1>
 			<p class="text-center">
-				<?php echo L_TIME_LIMIT;?>:<span class="label label-primary"><?php echo $problemItem['time_limit']." Sec";?></span>
-				<?php echo L_MEM_LIMIT;?>:<span class="label label-primary"><?php echo $problemItem['memory_limit']." MiB";?></span><br/>
-				<?php echo L_SUBMIT;?>:<span class="label label-info"><?php echo $problemItem['submit'];?></span>
-				<?php echo L_JUDGE_AC;?>:<span class="label label-success"><?php echo $problemItem['accepted'];?></span>
+				<?php echo L_TIME_LIMIT;?>: <span class="label label-primary"><?php echo $problemItem['time_limit']." Sec";?></span>
+				<?php echo L_MEM_LIMIT;?>: <span class="label label-primary"><?php echo $problemItem['memory_limit']." MiB";?></span>
+			</p><p class="text-center">
+				<?php echo L_SUBMIT;?>: <span class="label label-info"><?php echo $problemItem['submit'];?></span>
+				<?php echo L_JUDGE_AC;?>: <span class="label label-success"><?php echo $problemItem['accepted'];?></span>
 			</p>
 			<p class="text-center">
 				<a id="oj-p-submit" class="btn btn-primary" href="./problemsubmit.php?pid=<?php echo $problemItem['problem_id'];?>" role="button"><?php echo L_SUBMIT;?></a>
@@ -53,7 +54,7 @@
 			</div>
 
 			<h3><a data-toggle="collapse" data-target="#problemHint"><?php echo L_HINT;?></a></h3>
-			<div class="collapse" id="problemHint" aria-expanded="true">
+			<div class="collapse in" id="problemHint" aria-expanded="true">
 				<pre><?php echo $problemItem['hint'];?></pre>
 			</div>
 			<!--
