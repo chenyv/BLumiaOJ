@@ -53,4 +53,5 @@ config.php
 
 # OJ Uploads
 upload*/
-**/custom/*.md
+
+#**/custom/*.md

@@ -2,6 +2,7 @@
 	session_start();
 	//Vars
 	require_once('./include/setting_oj.inc.php');
+	require_once('./include/Parsedown.php');
 	//Prepares
 	
 	$sql=$pdo->prepare(
@@ -29,6 +30,13 @@
 	if (isset($_GET['night'])) {
 		$expireData = intval($_GET['night']) == 1 ? time()+4*7*24*3600 : time()-61;
 		setcookie("night","true",$expireData);
+	}
+
+	$useThisFile = "about.md";
+	$atThisPath = "./pages/documents/custom/";
+
+	if (is_file("{$atThisPath}{$useThisFile}")) {
+		$content = file_get_contents("{$atThisPath}{$useThisFile}");
 	}
 	
 	//Page Includes

@@ -37,6 +37,7 @@
 				<li><a href="status.php"><?php echo L_STATUS;?></a></li>
 				<li><a href="ranklist.php"><?php echo L_RANKLIST;?></a></li>
 				<li><a href="contestlist.php"><?php echo L_CONTEST;?></a></li>
+				<li><a href="document.php">常见问题</a></li>
 				
 				<?php if ($FORUM_ENABLED) {?>
 				<li><a href="discuss.php"><?php echo L_FORUM;?></a></li>

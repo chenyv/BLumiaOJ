@@ -17,11 +17,16 @@
 		</div>		
 		<![endif]-->
 			<div class="row">
+				<?php echo Parsedown::instance()->setBreaksEnabled(true)->setUrlsLinked(false)->text($content);?>
+			</div>
+			<hr />
+			<div class="row">
 				<div id="chart" class="col-md-12 col-sm-12">
 					Loading Chart...
 				</div>
 				<!--sidebar removed-->
 			</div>
+			<hr />
 			<div class="row">
 				<div class="col-md-12">
 					<div id="news" class="doc">
